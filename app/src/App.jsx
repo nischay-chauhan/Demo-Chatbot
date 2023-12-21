@@ -1,4 +1,4 @@
-import  { useState } from 'react';
+import { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 
 import './App.css';
@@ -13,7 +13,6 @@ import {
 } from '@chatscope/chat-ui-kit-react';
 
 const API_KEY = import.meta.env.REACT_APP_OPENAI_API_KEY;
-
 
 function App() {
   const [message, setMessage] = useState([
@@ -36,7 +35,9 @@ function App() {
     setTyping(true);
 
     try {
-      const response = await  processMessageToChatGPT([...message, newMessage]);
+      const response = await processMessageToChatGPT([...message, newMessage]);
+      console.log("API Response:", response);
+
       const content = response.choices[0]?.message?.content;
 
       if (content) {
