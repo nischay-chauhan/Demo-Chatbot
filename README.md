@@ -23,18 +23,21 @@ A simple React chat application integrated with the OpenAI GPT-3.5 Turbo model f
    ```bash
    git clone https://github.com/your-username/chatgpt-react-app.git
    cd chatgpt-react-app
+   ```
    
 2.  Install Dependecies
-'''bash
+ ``` bash
     npm install
+```
 
 3. Create a .env file in the root of the project and add yor api key there
 
 ## USAGE
 
 1. Start the devlopment server 
-'''bash
+``` bash
     npm run dev
+```
 
 ## Configuration
 The OpenAI API key is stored in the .env file. Ensure it is kept secure and not shared publicly.
